@@ -1,60 +1,64 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
 import { Box, Typography } from "@mui/material";
+import '../App.css';
 
 const About = () => {
   return (
     <Layout>
-      <Box
-        sx={{
-          my: 15,
-          textAlign: "center",
-          p: 2,
-          "& h4": {
-            fontWeight: "bold",
-            my: 2,
-            fontSize: "2rem",
-          },
-          "& p": {
-            textAlign: "justify",
-          },
-          "@media (max-width:600px)": {
-            mt: 0,
-            "& h4 ": {
-              fontSize: "1.5rem",
-            },
-          },
-        }}
-      >
-        <Typography variant="h4">Welcome To My Resturant</Typography>
+      <Box className="about-container">
+        <Typography variant="h4">Welcome To ERESTA EVIDENTE</Typography>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quod,
-          suscipit, aperiam totam autem culpa cum eveniet dolorum quasi est
-          perspiciatis laborum. Nam recusandae nihil quia odio voluptatibus
-          facere omnis facilis rerum? Ab eum beatae nobis reiciendis, qui
-          temporibus aliquid, nesciunt velit sed quam recusandae necessitatibus,
-          tempora maxime. Repellendus incidunt, maxime labore dolorum eos
-          aperiam unde? At veritatis nesciunt eos quas cupiditate blanditiis est
-          quam maiores, amet, soluta exercitationem voluptatum, veniam
-          assumenda? Ratione perferendis officiis deserunt nostrum aspernatur
-          sed asperiores! Earum sunt placeat ducimus sint, deleniti amet esse
-          saepe voluptatem commodi laudantium quibusdam repellat nobis libero at
-          consectetur adipisci ipsa.
+          At ERESTA EVIDENTE, we pride ourselves on providing high-quality labor services across various sectors in Portugal.
         </p>
         <br />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          deserunt libero reprehenderit cum sint fugit cumque temporibus modi
-          facere eveniet amet obcaecati ducimus harum velit maxime vel qui
-          voluptatibus quam odio corrupti saepe, voluptas dolorum quidem
-          tempore? Esse sapiente molestias minus enim quisquam dolorum eum culpa
-          ullam impedit velit quo, corporis ducimus numquam dignissimos
-          inventore maiores. Nam deleniti itaque nostrum neque dolorum dolores,
-          aliquam, voluptatum sapiente doloribus laborum perspiciatis ipsam, quo
-          ut nisi distinctio sunt nihil est blanditiis perferendis eveniet
-          nesciunt! Nostrum, voluptatum eveniet repellat vel officia deleniti
-          tempore voluptatibus perferendis esse eaque temporibus porro?
-          Aspernatur beatae deleniti illo autem!
+          Our mission is to connect skilled workers with businesses and individuals in need of reliable and professional labor for dairy farming,
+          agriculture, solar panel installation, and construction. We are dedicated to helping our clients achieve their goals with the best workforce available.
+        </p>
+        <br />
+        <Typography variant="h5">Our Services</Typography>
+        <p>
+          <strong>Dairy Farming:</strong> Our expert labor force is trained in modern dairy farming techniques, ensuring the highest standards of care and productivity. From milking to animal husbandry, our workers are dedicated to maintaining the health and well-being of livestock.
+        </p>
+        <br />
+        <p>
+          <strong>Agriculture:</strong> Agriculture is the backbone of any thriving society, and our team is committed to supporting farmers with skilled labor. We assist with planting, harvesting, irrigation, and all aspects of crop management to ensure abundant yields and sustainable practices.
+        </p>
+        <br />
+        <p>
+          <strong>Solar Panel Installation:</strong> Embrace renewable energy with our specialized solar panel installation services. Our technicians are equipped with the knowledge and tools to efficiently install solar panels, helping you harness the power of the sun to reduce energy costs and environmental impact.
+        </p>
+        <br />
+        <p>
+          <strong>Construction:</strong> Whether it's residential, commercial, or industrial construction, our workforce is experienced in all facets of the building process. From laying foundations to finishing touches, we provide the skilled labor necessary to bring your construction projects to life.
+        </p>
+        <br />
+        <Typography variant="h5">Our Mission</Typography>
+        <p>
+          At ERESTA EVIDENTE, our mission is to provide exceptional labor services that exceed our clients' expectations. We believe in the value of hard work, dedication, and the importance of connecting the right people with the right jobs. Our commitment to quality and professionalism is the cornerstone of our business.
+        </p>
+        <br />
+        <Typography variant="h5">Why Choose Us?</Typography>
+        <p>
+          <strong>Skilled Workforce:</strong> Our team comprises experienced and trained professionals ready to meet your labor needs.
+        </p>
+        <br />
+        <p>
+          <strong>Reliability:</strong> We understand the importance of timely and dependable service, ensuring your projects run smoothly.
+        </p>
+        <br />
+        <p>
+          <strong>Quality Assurance:</strong> We are dedicated to maintaining the highest standards in every job we undertake.
+        </p>
+        <br />
+        <p>
+          <strong>Local Expertise:</strong> Based in Portugal, we have a deep understanding of the local market and industry requirements.
+        </p>
+        <br />
+        <Typography variant="h5">Get in Touch</Typography>
+        <p>
+          If you need labor for dairy farming, agriculture, solar panel installation, or construction, look no further than ERESTA EVIDENTE. Contact us today to learn more about our services and how we can assist you with your projects.
         </p>
       </Box>
     </Layout>

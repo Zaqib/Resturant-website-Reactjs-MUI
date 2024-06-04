@@ -1,11 +1,10 @@
 import React from "react";
-import { MenuList } from "../data/data";
+import { ServiceList } from "../data/data";
 import Layout from "./../components/Layout/Layout";
 import {
   Box,
   Card,
   CardActionArea,
-  CardContent,
   CardMedia,
   Typography,
 } from "@mui/material";
@@ -13,26 +12,33 @@ import {
 const Menu = () => {
   return (
     <Layout>
-      <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-        {MenuList.map((menu) => (
-          <Card sx={{ maxWidth: "390px", display: "flex", m: 2 }}>
-            <CardActionArea>
-              <CardMedia
-                sx={{ minHeight: "400px" }}
-                component={"img"}
-                src={menu.image}
-                alt={menu.name}
-              />
-              <CardContent>
-                <Typography variant="h5" gutterBottom component={"div"}>
-                  {menu.name}
-                </Typography>
-                <Typography variant="body2">{menu.description}</Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        ))}
-      </Box>
+      {ServiceList.map((service, index) => (
+        <Box key={index} sx={{ mb: 4, mt: index === 0 ? 8 : 0 }}>
+          {/* Service Header */}
+          <Typography variant="h5" gutterBottom component="div" sx={{ textAlign: "center", mb: 2 }}>
+            {service.name}
+          </Typography>
+          <Typography variant="body1" sx={{ textAlign: "center", mb: 2 }}>
+            {service.description}
+          </Typography>
+
+          {/* Images Row */}
+          <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+            {service.images.map((image, imgIndex) => (
+              <Card key={imgIndex} sx={{ maxWidth: "390px", display: "flex", m: 2 }}>
+                <CardActionArea>
+                  <CardMedia
+                    sx={{ minHeight: "200px" }}
+                    component="img"
+                    src={image}
+                    alt={`${service.name} image ${imgIndex + 1}`}
+                  />
+                </CardActionArea>
+              </Card>
+            ))}
+          </Box>
+        </Box>
+      ))}
     </Layout>
   );
 };

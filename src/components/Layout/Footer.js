@@ -1,9 +1,10 @@
 import React from "react";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import TwitterIcon from "@mui/icons-material/Twitter";
+// import GitHubIcon from "@mui/icons-material/GitHub";
+// import YouTubeIcon from "@mui/icons-material/YouTube";
 import { Box, Typography } from "@mui/material";
+
 const Footer = () => {
   return (
     <>
@@ -25,12 +26,13 @@ const Footer = () => {
             },
           }}
         >
-          {/* icons */}
-          <InstagramIcon />
+          {/* Social media icons */}
+          {/* <InstagramIcon />
           <TwitterIcon />
           <GitHubIcon />
-          <YouTubeIcon />
+          <YouTubeIcon /> */}
         </Box>
+        {/* Developer details */}
         <Typography
           variant="h5"
           sx={{
@@ -39,7 +41,17 @@ const Footer = () => {
             },
           }}
         >
-          All Rights Reserved &copy; Techinfo YT
+          All Rights Reserved &copy; ERESTA EVIDENTE
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{
+            "@media (max-width:600px)": {
+              fontSize: "0.8rem",
+            },
+          }}
+        >
+          Developed by: Muhammad Zaaqib
         </Typography>
       </Box>
     </>
